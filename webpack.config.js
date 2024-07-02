@@ -2,6 +2,7 @@
 
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const Dotenv = require('dotenv-webpack');
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -15,7 +16,11 @@ const config = {
       template: "./src/index.html",
       filename: 'index.html',
       inject: 'body',
+      environment: process.env.API_KEY,
     }),
+    new Dotenv({
+      path: './src/.env',
+    })
   ],
   module: {
     rules: [

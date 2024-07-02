@@ -1,0 +1,31 @@
+{
+  "name": "weather-js",
+  "version": "1.0.0",
+  "description": "JS Weather web application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production"
+  },
+  "author": "incandesc3nce <incandesc3ncee@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@eslint/js": "^9.6.0",
+    "@webpack-cli/generators": "^3.0.7",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.6.0",
+    "globals": "^15.7.0",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "prettier": "3.3.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

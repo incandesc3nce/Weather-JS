@@ -16,8 +16,9 @@ export default function getWeatherToday(current) {
 
     cloud: current.cloud,
 
-    condition: current.condition,
-
     is_day: current.is_day === 1 ? true : false,
+
+    icon: current.condition.icon,
+    condition: current.condition.text
   };
 }

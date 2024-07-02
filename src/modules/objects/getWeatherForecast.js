@@ -12,5 +12,8 @@ export default function getWeatherForecast(forecastDay) {
 
     chance_of_rain: forecastDay.day.daily_chance_of_rain,
     chance_of_snow: forecastDay.day.daily_chance_of_snow,
+
+    icon: forecastDay.day.condition.icon,
+    condition: forecastDay.day.condition.text
   };
 }

@@ -109,13 +109,21 @@ main form img {
 }
 
 button[type="submit"] {
-  background: #5451ff;
+  background: #5451ffc9;
   border-radius: 10px;
   border: 0;
   padding: 0;
   color: #f1f1f1;
   cursor: pointer;
   font-weight: 550;
+  transition-duration: 0.2s;
+}
+
+button[type="submit"]:hover {
+  scale: 1.1;
+}
+button[type="submit"]:active {
+  scale: 0.9;
 }
 
 footer {

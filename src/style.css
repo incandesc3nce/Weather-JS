@@ -238,7 +238,7 @@ footer a {
   font-weight: 500;
 }
 
-.description {
+.desc-1, .desc-2 {
   display: flex;
   justify-content: space-between;
 
@@ -249,7 +249,10 @@ footer a {
   border-radius: 15px;
 }
 
-.wind .speed, .wind .direction, .cloud, .humidity {
+.wind .speed, .wind .direction, 
+.cloud, .humidity, 
+.rain, .snow, 
+.sunrise, .sunset {
   display: flex;
   align-items: center;
   gap: 0.5em;
@@ -258,7 +261,7 @@ footer a {
   font-weight: 500;
 }
 
-.wind, .misc {
+.wind, .misc, .precipation, .sun {
   display: flex;
   flex-direction: column;
   gap: 0.5em;

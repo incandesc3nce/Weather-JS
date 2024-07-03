@@ -35,6 +35,8 @@ h6 {
   --rain: linear-gradient(90deg, #4b4b4bb2, #c2c2c280);
 
   --input-text: #ffffff;
+
+  --container-background: #ffffff5e;
 }
 
 body {
@@ -143,4 +145,48 @@ footer a {
   text-decoration: none;
   color: rgb(237, 99, 255);
   font-weight: 600;
+}
+
+.today-weather {
+  width: 498px;
+  height: 800px;
+
+  background-color: var(--container-background);
+}
+
+.switches {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wind-unit, .temp-unit {
+  display: flex;
+  align-items: center;
+
+  border: 2px solid var(--input-text);
+  border-radius: 10px;
+
+  font-weight: 550;
+
+  margin: 0.5rem 1rem;
+}
+
+.kph, .mph, .celsius, .fahrenheit {
+  cursor: pointer;
+  padding: 0 0.5em;
+
+  transition-duration: 0.2s;
+}
+.kph, .celsius {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.mph, .fahrenheit {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.selected-unit {
+  background-color: var(--input-text);
+  color: #4e4e4e;
 }

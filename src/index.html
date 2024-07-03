@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main>
@@ -15,7 +16,19 @@
       
       <button type="submit"><img src="./assets/images/magnify.svg" alt="Magnifying glass" class="svg-white"></button>
     </form>
-    <div id="content">   
+    <div id="content">
+      <div class="today-weather">
+        <div class="switches">
+          <div class="wind-unit">
+            <div class="kph selected-unit">km/h</div>
+            <div class="mph">mp/h</div>
+          </div>
+          <div class="temp-unit">
+            <div class="celsius selected-unit">°C</div>
+            <div class="fahrenheit">°F</div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <footer>

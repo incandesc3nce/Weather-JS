@@ -308,3 +308,15 @@ footer a {
   width: 48px;
   height: 48px;
 }
+
+.forecast .min-temp {
+  color: #bbbbbb;
+}
+
+.forecast .precipation {
+  justify-self: center;
+}
+
+.forecast .max-temp, .forecast .min-temp {
+  justify-self: end;
+}

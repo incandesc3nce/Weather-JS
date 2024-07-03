@@ -236,3 +236,34 @@ footer a {
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+.description {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 1em;
+  padding: 0.5em 1em;
+
+  background-color: #2525253d;
+  border-radius: 15px;
+}
+
+.wind .speed, .wind .direction, .cloud, .humidity {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.wind, .misc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.desc-icon {
+  width: 32px;
+  height: 32px;
+}

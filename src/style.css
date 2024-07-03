@@ -203,7 +203,7 @@ footer a {
   justify-content: center;
 }
 
-.summary .condition img {
+.condition .icon{
   width: 64px;
   height: 64px;
 }
@@ -233,6 +233,6 @@ footer a {
 }
 
 .feels-like {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }

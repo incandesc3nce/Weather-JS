@@ -112,7 +112,7 @@ main form img {
 }
 
 button[type="submit"] {
-  background: #2e2bffc9;
+  background: var(--section-night);
   border-radius: 10px;
   border: 0;
   padding: 0;
@@ -148,7 +148,7 @@ footer a {
   font-weight: 600;
 }
 
-.today-weather {
+.weather {
   width: 498px;
   height: 800px;
 
@@ -270,4 +270,41 @@ footer a {
 .desc-icon {
   width: 32px;
   height: 32px;
+}
+
+.forecasts {
+  display: flex;
+  flex-direction: column;
+
+  margin: 2em 1em;
+  background-color: var(--section-night);
+  
+  border-radius: 15px;
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+
+
+  padding: 0.25em 1em;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.forecast:not(:first-child) {
+  border-top: 1px solid var(--text-night);
+}
+
+.forecast-condition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forecast-icon {
+  width: 48px;
+  height: 48px;
 }

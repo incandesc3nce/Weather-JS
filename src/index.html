@@ -6,14 +6,18 @@
   <title>Document</title>
 </head>
 <body>
-  <header>
+  <main>
     <form action="">
-      <label for="city">City</label>
-      <input type="text" name="city" id="city">
-      <button type="submit">Get Weather</button>
+      <label for="city">
+        <span><img src="./assets/images/location.svg" alt="Map marker" class="svg-white"></span>
+        <input type="text" name="city" id="city" placeholder="Enter your city">
+      </label>
+      
+      <button type="submit"><img src="./assets/images/magnify.svg" alt="Magnifying glass" class="svg-white"></button>
     </form>
-  </header>
-  <main></main>
+    <div id="content">   
+    </div>
+  </main>
   <footer>
     <p>2024 © Built by <a href="https://github.com/incandesc3nce">incandesc3nce</a></p>
     <p>Powered by <a href="https://www.weatherapi.com/" title="Weather API">WeatherAPI.com</a></p>

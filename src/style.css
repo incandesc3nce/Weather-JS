@@ -190,3 +190,49 @@ footer a {
   background-color: var(--input-text);
   color: #4e4e4e;
 }
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.condition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary .condition img {
+  width: 64px;
+  height: 64px;
+}
+.condition .text {
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+.temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actual-temp {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.actual-temp + div {
+  font-size: 1.3rem;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.feels-like {
+  font-size: 1.8rem;
+  font-weight: 500;
+}

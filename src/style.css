@@ -34,9 +34,10 @@ h6 {
   --night: linear-gradient(90deg, #5451ff, #2c2158);
   --rain: linear-gradient(90deg, #4b4b4bb2, #c2c2c280);
 
-  --input-text: #ffffff;
+  --text-night: #ffffff;
 
-  --container-background: #ffffff5e;
+  --container-background-night: #8f87ff86;
+  --section-night: #3b32b96e;
 }
 
 body {
@@ -65,7 +66,7 @@ main {
 }
 
 main form {
-  background-color: #ffffff5e;
+  background-color: var(--container-background-night);
   border-radius: 15px;
   padding: 0.2em 0.5em;
 
@@ -95,8 +96,8 @@ main form input {
   border-bottom: 0;
   padding-left: 0.5em;
   outline: none;
-  caret-color: var(--input-text);
-  color: var(--input-text);
+  caret-color: var(--text-night);
+  color: var(--text-night);
   font-weight: 510;
 }
 main form input::placeholder {
@@ -111,7 +112,7 @@ main form img {
 }
 
 button[type="submit"] {
-  background: #5451ffc9;
+  background: #2e2bffc9;
   border-radius: 10px;
   border: 0;
   padding: 0;
@@ -151,7 +152,7 @@ footer a {
   width: 498px;
   height: 800px;
 
-  background-color: var(--container-background);
+  background-color: var(--container-background-night);
 }
 
 .switches {
@@ -163,7 +164,7 @@ footer a {
   display: flex;
   align-items: center;
 
-  border: 2px solid var(--input-text);
+  border: 2px solid var(--text-night);
   border-radius: 10px;
 
   font-weight: 550;
@@ -187,7 +188,7 @@ footer a {
 }
 
 .selected-unit {
-  background-color: var(--input-text);
+  background-color: var(--text-night);
   color: #4e4e4e;
 }
 
@@ -244,7 +245,7 @@ footer a {
   margin: 1em;
   padding: 0.5em 1em;
 
-  background-color: #2525253d;
+  background-color: var(--section-night);
   border-radius: 15px;
 }
 

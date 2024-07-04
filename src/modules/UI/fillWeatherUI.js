@@ -7,10 +7,10 @@ export default function fillWeatherUI(weatherToday, weatherForecast) {
   conditionText.textContent = weatherToday.condition;
 
   const actualTemp = document.querySelector('.actual-temp');
-  actualTemp.textContent = `${weatherToday.temp_c}°C`;
+  actualTemp.textContent = `${Math.round(weatherToday.temp_c)}°C`;
 
   const feelsLike = document.querySelector('.feels-like');
-  feelsLike.textContent = `${weatherToday.feelslike_c}°C`;
+  feelsLike.textContent = `${Math.round(weatherToday.feelslike_c)}°C`;
 
   const windSpeed = document.querySelector('.wind-speed');
   windSpeed.textContent = `${weatherToday.wind_kph} km/h`;
@@ -52,9 +52,9 @@ export default function fillWeatherUI(weatherToday, weatherForecast) {
     forecastPrecipation.textContent = `${weatherForecast[i].chance_of_rain}%`;
 
     const forecastMinTemp = forecast.querySelector('.min-temp');
-    forecastMinTemp.textContent = `${weatherForecast[i].mintemp_c}°C`;
+    forecastMinTemp.textContent = `${Math.round(weatherForecast[i].mintemp_c)}°C`;
 
     const forecastMaxTemp = forecast.querySelector('.max-temp');
-    forecastMaxTemp.textContent = `${weatherForecast[i].maxtemp_c}°C`;
+    forecastMaxTemp.textContent = `${Math.round(weatherForecast[i].maxtemp_c)}°C`;
   })
 } 

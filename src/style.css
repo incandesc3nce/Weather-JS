@@ -84,11 +84,13 @@ main form {
   font-size: 1.8rem;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 1em;
 
   width: 100%;
+
+  transition-duration: 0.1s;
 }
 main form label {
   display: flex;
@@ -179,6 +181,8 @@ footer a {
 
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+
+  overflow: hidden;
 }
 
 .switches {
@@ -366,4 +370,61 @@ footer a {
 .forecast .max-temp,
 .forecast .min-temp {
   justify-self: end;
+}
+
+.weather-open {
+  animation: 0.5s slidein;
+  height: 96%;
+}
+.weather-close {
+  animation: 0.5s slideout;
+  height: 0%;
+}
+
+.switches,
+.summary,
+.desc-1,
+.desc-2,
+.forecasts {
+  animation: 0.3s fadein;
+}
+
+@keyframes slidein {
+  from {
+    height: 0%;
+  }
+
+  to {
+    height: 96%;
+  }
+}
+
+@keyframes slideout {
+  from {
+    height: 96%;
+  }
+
+  to {
+    height: 0%;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }

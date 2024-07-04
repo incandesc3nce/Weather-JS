@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 * {
   margin: 0;
@@ -35,7 +35,6 @@ h6 {
   --rain: linear-gradient(90deg, #4b4b4bb2, #c2c2c280);
 
   --text-night: #ffffff;
-
   --container-background-night: #8f87ff86;
   --section-night: #3b32b96e;
 }
@@ -44,13 +43,25 @@ body {
   height: 100vh;
 
   padding: 1em 0 0 0;
-  
+
   display: grid;
   grid-template-rows: 4fr 0.2fr;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
 
-  font-family: 'Lato', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    "Lato",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 
   background: var(--night);
 }
@@ -108,7 +119,8 @@ main form img {
   width: 1.5em;
 }
 .svg-white {
-  filter: invert(98%) sepia(0%) saturate(435%) hue-rotate(64deg) brightness(115%) contrast(88%);
+  filter: invert(98%) sepia(0%) saturate(435%) hue-rotate(64deg)
+    brightness(115%) contrast(88%);
 }
 
 button[type="submit"] {
@@ -131,9 +143,9 @@ button[type="submit"]:active {
 
 footer {
   grid-column: 1/4;
-  grid-row: -2;
-  background-color: rgba(240, 248, 255, 0.158);
-  color: #ffffffbd;
+  grid-row: -1;
+  background-color: var(--container-background-night);
+  color: var(--text-night);
   align-content: end;
 
   display: flex;
@@ -150,7 +162,7 @@ footer a {
 
 .weather {
   width: 498px;
-  height: 800px;
+  height: 750px;
 
   background-color: var(--container-background-night);
 }
@@ -160,7 +172,8 @@ footer a {
   justify-content: space-between;
 }
 
-.wind-unit, .temp-unit {
+.wind-unit,
+.temp-unit {
   display: flex;
   align-items: center;
 
@@ -172,17 +185,22 @@ footer a {
   margin: 0.5rem 1rem;
 }
 
-.kph, .mph, .celsius, .fahrenheit {
+.kph,
+.mph,
+.celsius,
+.fahrenheit {
   cursor: pointer;
   padding: 0 0.5em;
 
   transition-duration: 0.2s;
 }
-.kph, .celsius {
+.kph,
+.celsius {
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
 }
-.mph, .fahrenheit {
+.mph,
+.fahrenheit {
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
 }
@@ -204,7 +222,7 @@ footer a {
   justify-content: center;
 }
 
-.condition .icon{
+.condition .icon {
   width: 64px;
   height: 64px;
 }
@@ -238,7 +256,8 @@ footer a {
   font-weight: 500;
 }
 
-.desc-1, .desc-2 {
+.desc-1,
+.desc-2 {
   display: flex;
   justify-content: space-between;
 
@@ -249,10 +268,14 @@ footer a {
   border-radius: 15px;
 }
 
-.wind .speed, .wind .direction, 
-.cloud, .humidity, 
-.rain, .snow, 
-.sunrise, .sunset {
+.wind .speed,
+.wind .direction,
+.cloud,
+.humidity,
+.rain,
+.snow,
+.sunrise,
+.sunset {
   display: flex;
   align-items: center;
   gap: 0.5em;
@@ -261,7 +284,10 @@ footer a {
   font-weight: 500;
 }
 
-.wind, .misc, .precipation, .sun {
+.wind,
+.misc,
+.precipation,
+.sun {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -278,7 +304,7 @@ footer a {
 
   margin: 2em 1em;
   background-color: var(--section-night);
-  
+
   border-radius: 15px;
 }
 
@@ -286,7 +312,6 @@ footer a {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
-
 
   padding: 0.25em 1em;
 
@@ -317,6 +342,7 @@ footer a {
   justify-self: center;
 }
 
-.forecast .max-temp, .forecast .min-temp {
+.forecast .max-temp,
+.forecast .min-temp {
   justify-self: end;
 }

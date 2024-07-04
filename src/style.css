@@ -295,7 +295,7 @@ footer a {
 .humidity,
 .sunrise,
 .sunset {
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .wind,

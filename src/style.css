@@ -284,6 +284,20 @@ footer a {
   font-weight: 500;
 }
 
+.wind .speed,
+.wind .direction,
+.rain,
+.snow {
+  justify-content: flex-start;
+}
+
+.cloud,
+.humidity,
+.sunrise,
+.sunset {
+  justify-content: space-between;
+}
+
 .wind,
 .misc,
 .precipation,
@@ -323,24 +337,17 @@ footer a {
   border-top: 1px solid var(--text-night);
 }
 
-.forecast-condition {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .forecast-icon {
   width: 48px;
   height: 48px;
+
+  justify-self: center;
 }
 
 .forecast .min-temp {
   color: #bbbbbb;
 }
 
-.forecast .precipation {
-  justify-self: center;
-}
 
 .forecast .max-temp,
 .forecast .min-temp {

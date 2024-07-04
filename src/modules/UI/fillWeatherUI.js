@@ -38,8 +38,12 @@ export default function fillWeatherUI(weatherToday, weatherForecast) {
 
   const forecasts = document.querySelectorAll('.forecast');
   forecasts.forEach((forecast, i) => {
-    const forecastDay = format(new Date(weatherForecast[i].date), 'eee');
-    forecast.querySelector('.forecast-day').textContent = forecastDay;
+    if (i > 0) {
+      const forecastDay = format(new Date(weatherForecast[i].date), 'eee');
+      forecast.querySelector('.forecast-day').textContent = forecastDay;
+    } else {
+      forecast.querySelector('.forecast-day').textContent = 'Today';
+    }
 
     const forecastIcon = forecast.querySelector('.forecast-icon');
     forecastIcon.src = `http:${weatherForecast[i].icon}`;

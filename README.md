@@ -3,7 +3,7 @@ Weather web app built with HTML, CSS and JS. Powered by [WeatherAPI.com](https:/
 
 Responsive on mobile: ✅
 
-🔥 [Live Preview](https://incandesc3nce.github.io/Library/) 🔥
+🔥 [Live Preview](https://incandesc3nce.github.io/Weather-JS/) 🔥
 
 When user opens the web app, they are prompted to enter their location. Then, they are shown current weather and forecast for the next 3 days after getting data via WeatherAPI.
 

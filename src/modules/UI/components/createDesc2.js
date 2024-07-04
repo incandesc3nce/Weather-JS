@@ -1,3 +1,8 @@
+import rainSVG from "../../../assets/images/rain.svg";
+import snowSVG from "../../../assets/images/snow.svg";
+import sunriseSVG from "../../../assets/images/sunrise.svg";
+import sunsetSVG from "../../../assets/images/sunset.svg";
+
 export default function createDesc2() {
   const desc2 = document.createElement("div");
   desc2.classList.add("desc-2");
@@ -11,6 +16,7 @@ export default function createDesc2() {
   const rainIcon = document.createElement("img");
   rainIcon.classList.add("desc-icon", "svg-white");
   rainIcon.setAttribute("alt", "Rain");
+  rainIcon.setAttribute("src", `${rainSVG}`);
   const rainValue = document.createElement("span");
   rainValue.classList.add("rain-value");
 
@@ -20,6 +26,7 @@ export default function createDesc2() {
   const snowIcon = document.createElement("img");
   snowIcon.classList.add("desc-icon", "svg-white");
   snowIcon.setAttribute("alt", "Snow");
+  snowIcon.setAttribute("src", `${snowSVG}`);
   const snowValue = document.createElement("span");
   snowValue.classList.add("snow-value");
 
@@ -40,6 +47,7 @@ export default function createDesc2() {
   const sunriseIcon = document.createElement("img");
   sunriseIcon.classList.add("desc-icon", "svg-white");
   sunriseIcon.setAttribute("alt", "Sunrise");
+  sunriseIcon.setAttribute("src", `${sunriseSVG}`);
   const sunriseValue = document.createElement("span");
   sunriseValue.classList.add("sunrise-value");
 
@@ -49,6 +57,7 @@ export default function createDesc2() {
   const sunsetIcon = document.createElement("img");
   sunsetIcon.classList.add("desc-icon", "svg-white");
   sunsetIcon.setAttribute("alt", "Sunset");
+  sunsetIcon.setAttribute("src", `${sunsetSVG}`);
   const sunsetValue = document.createElement("span");
   sunsetValue.classList.add("sunset-value");
 

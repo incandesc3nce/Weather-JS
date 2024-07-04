@@ -1,3 +1,8 @@
+import windSpeed from '../../../assets/images/wind-speed.svg';
+import windDirection from '../../../assets/images/wind-direction.svg';
+import cloudSVG from '../../../assets/images/cloud.svg';
+import humiditySVG from '../../../assets/images/humidity.svg';
+
 export default function createDesc1() {
   const desc1 = document.createElement("div");
   desc1.classList.add("desc-1");
@@ -11,6 +16,7 @@ export default function createDesc1() {
   const speedIcon = document.createElement("img");
   speedIcon.classList.add("desc-icon", "svg-white");
   speedIcon.setAttribute("alt", "Wind speed");
+  speedIcon.setAttribute("src", `${windSpeed}`);
 
   const speedValue = document.createElement("span");
   speedValue.classList.add("wind-speed");
@@ -21,6 +27,7 @@ export default function createDesc1() {
   const directionIcon = document.createElement("img");
   directionIcon.classList.add("desc-icon", "svg-white");
   directionIcon.setAttribute("alt", "Wind direction");
+  directionIcon.setAttribute("src", `${windDirection}`);
 
   const directionValue = document.createElement("span");
   directionValue.classList.add("wind-degree");
@@ -44,6 +51,7 @@ export default function createDesc1() {
   const cloudIcon = document.createElement("img");
   cloudIcon.classList.add("desc-icon", "svg-white");
   cloudIcon.setAttribute("alt", "Cloud");
+  cloudIcon.setAttribute("src", `${cloudSVG}`);
 
   cloud.appendChild(cloudValue);
   cloud.appendChild(cloudIcon);
@@ -58,6 +66,7 @@ export default function createDesc1() {
   const humidityIcon = document.createElement("img");
   humidityIcon.classList.add("desc-icon", "svg-white");
   humidityIcon.setAttribute("alt", "Humidity");
+  humidityIcon.setAttribute("src", `${humiditySVG}`);
 
   humidity.appendChild(humidityValue);
   humidity.appendChild(humidityIcon);

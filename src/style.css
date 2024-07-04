@@ -377,7 +377,7 @@ footer a {
   height: 96%;
 }
 .weather-close {
-  animation: 0.5s slideout;
+  animation: 0.3s slideout;
   height: 0%;
 }
 

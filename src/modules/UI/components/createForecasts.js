@@ -9,17 +9,20 @@ export default function createForecasts(amountOfDays = 3) {
     const forecastDay = document.createElement("div");
     forecastDay.classList.add("forecast-day");
 
-    const forecastDate = document.createElement("div");
-    forecastDate.classList.add("forecast-date");
     const forecastIcon = document.createElement("img");
     forecastIcon.classList.add("forecast-icon");
     const forecastPrecipation = document.createElement("div");
     forecastPrecipation.classList.add("forecast-precipation");
+    const minTemp = document.createElement("div");
+    minTemp.classList.add("min-temp");
+    const maxTemp = document.createElement("div");
+    maxTemp.classList.add("max-temp");
 
     forecast.appendChild(forecastDay);
-    forecastDay.appendChild(forecastDate);
-    forecastDay.appendChild(forecastIcon);
-    forecastDay.appendChild(forecastPrecipation);
+    forecast.appendChild(forecastIcon);
+    forecast.appendChild(forecastPrecipation);
+    forecast.appendChild(minTemp);
+    forecast.appendChild(maxTemp);
     forecasts.appendChild(forecast);
   }
 

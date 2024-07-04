@@ -1,125 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main>
-    <form action="">
-      <label for="city">
-        <span><img src="./assets/images/location.svg" alt="Map marker" class="svg-white"></span>
-        <input type="text" name="city" id="city" placeholder="Enter your city">
-      </label>
-      
-      <button type="submit"><img src="./assets/images/magnify.svg" alt="Magnifying glass" class="svg-white"></button>
-    </form>
-    <div id="content">
-      <div class="weather">
-        <div class="switches">
-          <div class="wind-unit">
-            <div class="kph selected-unit">km/h</div>
-            <div class="mph">mi/h</div>
-          </div>
-          <div class="temp-unit">
-            <div class="celsius selected-unit">°C</div>
-            <div class="fahrenheit">°F</div>
-          </div>
-        </div>
-        <div class="summary">
-          <div class="condition">
-            <img class="icon" src="http://cdn.weatherapi.com/weather/64x64/day/113.png" alt="weather icon">
-            <div class="text">Sunny</div>
-          </div>
-          <div class="temp">
-            <div class="actual-temp">23°C</div>
-            <div>Feels like <span class="feels-like">22°C</span></div>
-          </div>
-        </div>
-        <div class="desc-1">
-          <div class="wind">
-            <div class="speed">
-              <img class="desc-icon svg-white" src="./assets/images/wind-speed.svg" alt="Wind speed">
-              <p><span class="wind-speed">11.2</span> km/h</p>
-            </div>
-            <div class="direction">
-              <img class="desc-icon svg-white" src="./assets/images/wind-direction.svg" alt="Wind direction">
-              <p>
-                <span class="wind-degree">312</span>°
-                (<span class="wind-direction">NW</span>)
-              </p>
-            </div>
-          </div>
-          <div class="misc">
-            <div class="cloud">
-              <p><span class="cloud-value">75</span>%</p>
-              <img class="desc-icon svg-white" src="./assets/images/cloud.svg" alt="Cloud">
-            </div>
-            <div class="humidity">
-              <p><span class="humidity-value">50</span>%</p>
-              <img class="desc-icon svg-white" src="./assets/images/humidity.svg" alt="Humidity">
-            </div>
-          </div>
-        </div>
-        <div class="desc-2">
-          <div class="precipation">
-            <div class="rain">
-              <img class="desc-icon svg-white" src="./assets/images/rain.svg" alt="Rain">
-              <p><span class="rain-value">50</span>%</p>
-            </div>
-            <div class="snow">
-              <img class="desc-icon svg-white" src="./assets/images/snow.svg" alt="Snow">
-              <p><span class="snow-value">0</span>%</p>
-            </div>
-          </div>
-          <div class="sun">
-            <div class="sunrise">
-              <p><span class="sunrise-value">06:00</span></p>
-              <img class="desc-icon svg-white" src="./assets/images/sunrise.svg" alt="Sunrise">
-            </div>
-            <div class="sunset">
-              <p><span class="sunset-value">18:00</span></p>
-              <img class="desc-icon svg-white" src="./assets/images/sunset.svg" alt="Sunset">
-            </div>
-          </div>
-        </div>
-        <div class="forecasts">
-          <div class="forecast">
-            <div class="forecast-day">Today</div>
-            <div class="forecast-condition">
-              <img class="forecast-icon" src="http://cdn.weatherapi.com/weather/64x64/day/113.png" alt="weather icon">
-            </div>  
-            <div class="precipation">50%</div>
-            <div class="min-temp">18°C</div>
-            <div class="max-temp">24°C</div>
-          </div>
-          <div class="forecast">
-            <div class="forecast-day">Fri</div>
-            <div class="forecast-condition">
-              <img class="forecast-icon" src="http://cdn.weatherapi.com/weather/64x64/day/113.png" alt="weather icon">
-            </div>  
-            <div class="precipation">50%</div>
-            <div class="min-temp">18°C</div>
-            <div class="max-temp">24°C</div>
-          </div>
-          <div class="forecast">
-            <div class="forecast-day">Sat</div>
-            <div class="forecast-condition">
-              <img class="forecast-icon" src="http://cdn.weatherapi.com/weather/64x64/day/113.png" alt="weather icon">
-            </div>  
-            <div class="precipation">50%</div>
-            <div class="min-temp">18°C</div>
-            <div class="max-temp">24°C</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <p>2024 © Built by <a href="https://github.com/incandesc3nce">incandesc3nce</a></p>
-    <p>Powered by <a href="https://www.weatherapi.com/" title="Weather API">WeatherAPI.com</a></p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <label for="city">
+          <span
+            ><img
+              src="./assets/images/location.svg"
+              alt="Map marker"
+              class="svg-white"
+          /></span>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Enter your city"
+          />
+        </label>
+
+        <button type="submit">
+          <img
+            src="./assets/images/magnify.svg"
+            alt="Magnifying glass"
+            class="svg-white"
+          />
+        </button>
+      </form>
+      <div id="content"></div>
+    </main>
+    <footer>
+      <p>
+        2024 © Built by
+        <a href="https://github.com/incandesc3nce">incandesc3nce</a>
+      </p>
+      <p>
+        Powered by
+        <a href="https://www.weatherapi.com/" title="Weather API"
+          >WeatherAPI.com</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>

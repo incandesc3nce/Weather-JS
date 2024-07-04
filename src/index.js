@@ -10,11 +10,6 @@ import "./style.css";
 
 const apiKey = process.env.API_KEY;
 
-// 1 validate form
-// 2 show loading
-// 3 fetch weather
-// 4 remove loading
-// 5 fill weather
 const form = document.querySelector("form");
 form.addEventListener("submit", async (e) => {
   e.preventDefault();

@@ -8,6 +8,6 @@ export default async function fetchWeather(url) {
       throw Error(response.statusText);
     }
   } catch (err) {
-    console.log(err);
+    alert('City not found. Please check your spelling and try again.');
   }
 }

@@ -24,6 +24,10 @@ form.addEventListener("submit", async (e) => {
   const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&days=3&q=${city}`;
 
   const weatherJSON = await fetchWeather(url);
+  if (!weatherJSON) {
+    toggleLoading();
+    return;
+  }
   const weatherToday = getWeatherToday(weatherJSON.current);
   const weatherForecast = weatherJSON.forecast.forecastday.map((day) =>
     getWeatherForecast(day),

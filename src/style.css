@@ -228,6 +228,8 @@ footer a {
 .selected-unit {
   background-color: var(--text-night);
   color: #4e4e4e;
+
+  cursor: default;
 }
 
 .summary {

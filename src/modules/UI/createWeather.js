@@ -5,9 +5,6 @@ import createDesc2 from "./components/createDesc2";
 import createForecasts from "./components/createForecasts";
 
 export default function createWeather() {
-  const form = document.querySelector('form');
-  form.classList.add('no-bottom-round');
-
   const content = document.querySelector("#content");
 
   const weatherContainer = document.createElement("div");

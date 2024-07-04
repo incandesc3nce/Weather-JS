@@ -183,6 +183,8 @@ footer a {
   border-bottom-right-radius: 15px;
 
   overflow: hidden;
+
+  padding-bottom: 20px;
 }
 
 .switches {
@@ -428,3 +430,16 @@ footer a {
     opacity: 0;
   }
 }
+
+.loader-night {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  margin-left: 1em;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid var(--container-background-night);
+  border-right-color: var(--text-night);
+  animation: l2 1s infinite linear;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}

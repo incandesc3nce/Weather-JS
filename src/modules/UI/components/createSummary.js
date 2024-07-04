@@ -5,6 +5,7 @@ export default function createSummary() {
   const condition = document.createElement("div");
   condition.classList.add("condition");
   const icon = document.createElement("img");
+  icon.classList.add("icon");
   icon.setAttribute("alt", "weather icon");
 
   const text = document.createElement("div");

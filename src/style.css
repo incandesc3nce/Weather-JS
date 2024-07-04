@@ -87,6 +87,8 @@ main form {
   justify-content: center;
   align-items: center;
   gap: 1em;
+
+  width: 100%;
 }
 main form label {
   display: flex;
@@ -143,7 +145,7 @@ button[type="submit"]:active {
 
 footer {
   grid-column: 1/4;
-  grid-row: -1;
+  grid-row: -2;
   background-color: var(--container-background-night);
   color: var(--text-night);
   align-content: end;
@@ -160,11 +162,23 @@ footer a {
   font-weight: 600;
 }
 
+.no-bottom-round {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+}
+
 .weather {
-  width: 498px;
-  height: 750px;
+  height: 96%;
 
   background-color: var(--container-background-night);
+
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .switches {

@@ -436,7 +436,7 @@ footer a {
 .loader-night {
   grid-column: 3/4;
   grid-row: 1/2;
-  margin-left: 1em;
+  margin: 0 1em;
   width: 50px;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -445,3 +445,37 @@ footer a {
   animation: l2 1s infinite linear;
 }
 @keyframes l2 {to{transform: rotate(1turn)}}
+
+@media only screen and (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr 90vw 1fr;
+  }
+
+  main form {
+    gap: 0.1em;
+  }
+  main form input {
+    font-size: 70%;
+    width: 100%;
+  }
+
+  .forecast {
+    padding: 0.25em;
+  }
+
+  .forecast-precipation, .max-temp, .min-temp {
+    font-size: 1.3rem;
+  }
+
+  .forecast-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .max-temp {
+    justify-self: end;
+  }
+  .min-temp {
+    justify-self: start;
+  }
+}
